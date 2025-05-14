@@ -1,0 +1,8 @@
+numpy>=1.20
+opencv-python>=4.5.0
+insightface>=0.7.0
+onnxruntime>=1.10.0 
+# For Apple Silicon users experiencing issues or seeking optimization:
+# consider 'pip install onnxruntime-silicon' or ensure CoreML provider is used.
+scipy>=1.7.0 # Used for cosine distance if np.dot isn't preferred, but np.dot is fine for normalized vectors
+# pyttsx3 is not listed as we'll default to macOS 'say' command as per preference.
